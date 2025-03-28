@@ -3,10 +3,12 @@
 import { useEffect } from "react";
 import useQueryState from "../hooks/useQueryState";
 import useDebounceValue from "../hooks/useDebounceValue";
+import useRequiredApiKey from "../hooks/useRequiredApiKey";
 
 const SearchBar = ({ onSearch }) => {
   const [search, setSearch] = useQueryState("search", "");
   const debouncedSearch = useDebounceValue(search, 500);
+  useRequiredApiKey();
 
   useEffect(() => {
     onSearch?.(debouncedSearch); // Si une fonction onSearch est passée, on l'appelle
