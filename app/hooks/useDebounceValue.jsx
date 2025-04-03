@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from "react";
 
+// Sert à retarder la mise à jour de debouncedSearch.
+// Évite que l'URL change à chaque frappe de touche.
 const useDebounceValue = (value, delay) => {
   const [debouncedValue, setDebouncedValue] = useState(value);
 
