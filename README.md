@@ -1,4 +1,10 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Movies Finder
+
+A Next.js web application for discovering and exploring movies.
+
+## About This Project
+
+This repository contains a Movies Finder application built with Next.js 15, React 19, and Tailwind CSS. The project aims to provide users with an intuitive interface to search, browse, and discover movies.
 
 ## Getting Started
 
